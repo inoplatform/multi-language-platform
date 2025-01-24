@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Select Language{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="text-center">Select Your Language</h3>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-3">
+                    <a href="{{ url_for('language.set_language', language='en') }}" class="btn btn-lg btn-outline-primary">English</a>
+                    <a href="{{ url_for('language.set_language', language='ar') }}" class="btn btn-lg btn-outline-primary">العربية</a>
+                    <a href="{{ url_for('language.set_language', language='tr') }}" class="btn btn-lg btn-outline-primary">Türkçe</a>
+                    <a href="{{ url_for('language.set_language', language='sp') }}" class="btn btn-lg btn-outline-primary">Español</a>
+                    <a href="{{ url_for('language.set_language', language='ru') }}" class="btn btn-lg btn-outline-primary">Русский</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
