@@ -1,0 +1,13 @@
+/* Add custom styles here */
+.language-btn {
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
